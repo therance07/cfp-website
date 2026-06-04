@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import MotionDiv from '@/components/ui/MotionDiv';
 import { Heart, Lightbulb, Shield, Users, MapPin, Award } from 'lucide-react';
 import SectionWrapper   from '@/components/SectionWrapper';
 import SectionTitle     from '@/components/SectionTitle';
@@ -123,7 +123,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {VALUES.map(({ icon: Icon, label, desc }, i) => (
-            <motion.div
+            <MotionDiv
               key={label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -136,7 +136,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
               </div>
               <h3 className="font-heading font-bold text-[var(--color-dark)] mb-2">{label}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>
@@ -150,7 +150,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {TEAM.map(({ name, role, image }, i) => (
-            <motion.div
+            <MotionDiv
               key={name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -163,7 +163,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
               </div>
               <h3 className="font-heading font-bold text-[var(--color-dark)]">{name}</h3>
               <p className="text-[var(--color-primary)] text-sm font-semibold">{role}</p>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>

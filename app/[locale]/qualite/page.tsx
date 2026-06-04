@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import MotionDiv from '@/components/ui/MotionDiv';
 import { CheckCircle, Microscope, ClipboardCheck, ShieldCheck, FileText, Award } from 'lucide-react';
 import SectionWrapper   from '@/components/SectionWrapper';
 import SectionTitle     from '@/components/SectionTitle';
@@ -85,7 +85,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {TIMELINE.map(({ step, icon: Icon, title, desc, color }, i) => (
-            <motion.div
+            <MotionDiv
               key={step}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -103,7 +103,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
               </div>
               <h3 className="font-heading font-bold text-[var(--color-dark)] mb-2">{title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>
@@ -145,7 +145,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {CERTIFICATIONS.map(({ name, body, status, desc, icon }, i) => (
-            <motion.div
+            <MotionDiv
               key={name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -162,7 +162,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
                 <p className="text-[var(--color-primary)] text-xs font-semibold mb-2">{body}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
               </div>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>
