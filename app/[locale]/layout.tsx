@@ -21,6 +21,7 @@ const nunitoSans = Nunito_Sans({
   variable: '--font-nunito',
   weight: ['300', '400', '600', '700'],
   display: 'swap',
+  adjustFontFallback: false,
 });
 
 const barlowCondensed = Barlow_Condensed({

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Award, Leaf, Lightbulb, Globe, ArrowRight, Star, CheckCircle, Package, FlaskConical, Truck } from 'lucide-react';
-import { motion } from 'framer-motion';
+import MotionDiv from '@/components/ui/MotionDiv';
 import { Link } from '@/i18n/navigation';
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionTitle   from '@/components/SectionTitle';
@@ -93,7 +93,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {WHY_CFP.map(({ icon: Icon, keyT, color }, i) => (
-            <motion.div
+            <MotionDiv
               key={keyT}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
               <p className="text-gray-600 text-sm leading-relaxed">
                 {tw(`${keyT}_desc` as Parameters<typeof tw>[0])}
               </p>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>
@@ -129,7 +129,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PROCESS_STEPS.map(({ num, icon: Icon, keyT }, i) => (
-            <motion.div
+            <MotionDiv
               key={num}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -153,7 +153,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                   {tp(`${keyT}_desc` as Parameters<typeof tp>[0])}
                 </p>
               </div>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>
@@ -214,7 +214,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
-            <motion.div
+            <MotionDiv
               key={t.id}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -239,7 +239,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                   <p className="text-gray-500 text-xs">{t.role} · {t.company}</p>
                 </div>
               </div>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>
@@ -254,7 +254,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {CERTS.map(({ label, desc }, i) => (
-            <motion.div
+            <MotionDiv
               key={label}
               initial={{ opacity: 0, scale: 0.97 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -267,7 +267,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
               </div>
               <p className="font-heading font-bold text-[var(--color-dark)] text-sm mb-1">{label}</p>
               <p className="text-gray-500 text-xs leading-relaxed">{desc}</p>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </SectionWrapper>
