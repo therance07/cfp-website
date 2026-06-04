@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À Propos",
+    "quality": "Qualité",
+    "distribution": "Distribution",
+    "news": "Actualités",
+    "contact": "Contact",
+    "cta": "Commander / Partenaire"
+  },
+  "hero": {
+    "title": "Du Congo au monde,",
+    "title2": "la saveur de l'excellence",
+    "subtitle": "Depuis 2017, Congo Food Process transforme les richesses naturelles congolaises en produits agroalimentaires de qualité internationale.",
+    "cta_products": "Découvrir nos produits",
+    "cta_contact": "Nous contacter"
+  },
+  "stats": {
+    "capacity": "800 kg/jour",
+    "capacity_label": "Capacité de transformation",
+    "since": "2017",
+    "since_label": "Année de fondation",
+    "employees": "15+",
+    "employees_label": "Employés",
+    "ranges": "7",
+    "ranges_label": "Gammes de produits",
+    "suppliers": "10+",
+    "suppliers_label": "Fournisseurs locaux"
+  },
+  "why_cfp": {
+    "title": "Pourquoi choisir CFP ?",
+    "subtitle": "Quatre raisons de nous faire confiance",
+    "quality_title": "Qualité certifiée",
+    "quality_desc": "Contrôle rigoureux à chaque étape, des matières premières au produit fini. Traçabilité totale.",
+    "local_title": "100% local",
+    "local_desc": "Approvisionnement prioritairement congolais. Chaque produit CFP soutient l'agriculture nationale.",
+    "innovation_title": "Innovation continue",
+    "innovation_desc": "R&D constante pour de nouvelles gammes adaptées aux marchés locaux et internationaux.",
+    "export_title": "Ambition export",
+    "export_desc": "Produits conformes aux standards internationaux, prêts pour l'Amérique du Nord et l'Afrique."
+  },
+  "products": {
+    "title": "Nos produits phares",
+    "subtitle": "Découvrez nos gammes transformées avec passion",
+    "view_all": "Voir tous nos produits",
+    "made_in_congo": "Made in Congo",
+    "order_cta": "Commander",
+    "details_cta": "Voir le détail"
+  },
+  "process": {
+    "title": "Notre processus de transformation",
+    "subtitle": "De l'arachide brute au produit fini — excellence à chaque étape",
+    "step1_title": "Sélection matières premières",
+    "step1_desc": "Approvisionnement auprès de producteurs locaux certifiés, contrôle qualité à réception.",
+    "step2_title": "Nettoyage & tri",
+    "step2_desc": "Élimination des impuretés, calibrage et sélection des meilleurs grains.",
+    "step3_title": "Transformation",
+    "step3_desc": "Torréfaction, broyage ou enrobage selon la gamme — processus maîtrisés à 100%.",
+    "step4_title": "Contrôle qualité",
+    "step4_desc": "Tests organoleptiques, bactériologiques et de conformité avant conditionnement.",
+    "step5_title": "Conditionnement",
+    "step5_desc": "Emballage hygiénique, étiquetage bilingue, traçabilité lot par lot.",
+    "step6_title": "Distribution",
+    "step6_desc": "Livraison marchés locaux et export international selon les commandes."
+  },
+  "b2b": {
+    "title": "Vous êtes distributeur ou importateur ?",
+    "subtitle": "CFP propose des conditionnements adaptés à l'export, des MOQ flexibles et un accompagnement complet pour vos projets de distribution.",
+    "cta": "Discutons de votre projet",
+    "cta_order": "Passer une commande B2B"
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Partenaires distributeurs et clients fidèles"
+  },
+  "certifications": {
+    "title": "Qualité & Engagements",
+    "subtitle": "Des standards rigoureux pour des produits fiables"
+  },
+  "footer": {
+    "tagline": "Transformons le Congo, nourrissons le monde",
+    "nav_title": "Navigation",
+    "products_title": "Produits",
+    "contact_title": "Contact",
+    "social_title": "Suivez-nous",
+    "address": "N° 7 rue Lifou Mpila abattoir (zone SIASIC), Brazzaville",
+    "phone": "+242 06 515 82 96",
+    "email": "contact@congofoodprocess.cg",
+    "copyright": "© 2017-2026 Congo Food Process. Tous droits réservés."
+  },
+  "b2b_banner": {
+    "text": "Vous êtes professionnel ? Contactez notre équipe export →",
+    "cta": "Demande B2B"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Notre équipe est disponible du lundi au vendredi de 8h à 17h",
+    "form_name": "Nom complet",
+    "form_email": "Adresse email",
+    "form_phone": "Téléphone",
+    "form_subject": "Objet",
+    "form_message": "Votre message",
+    "form_submit": "Envoyer le message",
+    "form_success": "Message envoyé ! Nous vous répondrons sous 24h.",
+    "form_error": "Une erreur est survenue. Veuillez réessayer.",
+    "whatsapp": "Discuter sur WhatsApp"
+  },
+  "order": {
+    "title": "Commande B2B",
+    "subtitle": "Pour distributeurs, importateurs et professionnels",
+    "form_company": "Nom de l'entreprise",
+    "form_contact": "Nom du contact",
+    "form_email": "Email professionnel",
+    "form_phone": "Téléphone",
+    "form_country": "Pays",
+    "form_products": "Produits souhaités",
+    "form_quantity": "Quantité estimée",
+    "form_message": "Informations complémentaires",
+    "form_submit": "Envoyer la demande",
+    "form_success": "Demande reçue ! Notre équipe vous contacte sous 48h.",
+    "form_error": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "about": {
+    "title": "Notre histoire",
+    "subtitle": "Une entreprise née de la vision de valoriser les ressources congolaises",
+    "history": "Fondée en 2017 par une équipe d'entrepreneurs congolais passionnés d'agroalimentaire, Congo Food Process est née d'un constat simple : le Congo regorge de ressources naturelles de qualité, notamment l'arachide, qui méritent une transformation locale à haute valeur ajoutée.",
+    "mission_title": "Notre mission",
+    "mission": "Transformer les richesses agricoles du Congo en produits agroalimentaires de qualité internationale, créer de l'emploi local et contribuer à la souveraineté alimentaire nationale.",
+    "values_title": "Nos valeurs",
+    "value1": "Qualité",
+    "value2": "Transparence",
+    "value3": "Innovation",
+    "value4": "Éthique",
+    "value5": "Proximité",
+    "team_title": "Notre équipe dirigeante",
+    "factory_title": "Notre usine à Mpila",
+    "factory_desc": "Implantée en zone industrielle Mpila (zone SIASIC) à Brazzaville, notre usine dispose d'une capacité de transformation de 800 kg d'arachides par jour avec des équipements modernes répondant aux normes d'hygiène alimentaire."
+  },
+  "quality": {
+    "title": "Qualité & Certifications",
+    "subtitle": "Des standards rigoureux à chaque étape de production",
+    "policy_title": "Notre politique qualité",
+    "policy_desc": "Chez CFP, la qualité n'est pas une option — c'est notre fondement. Chaque lot est tracé, contrôlé et validé avant distribution.",
+    "standards_title": "Normes respectées",
+    "lab_title": "Laboratoire de contrôle",
+    "lab_desc": "Analyses microbiologiques, tests organoleptiques et contrôles physico-chimiques à chaque étape de production.",
+    "export_title": "Conformité export",
+    "export_desc": "Documentation technique disponible pour les acheteurs internationaux : fiches techniques, certificats d'analyse, bilans nutritionnels."
+  },
+  "distribution": {
+    "title": "Distribution & Export",
+    "subtitle": "Du Congo au monde entier",
+    "national_title": "Distribution nationale",
+    "national_desc": "Présents dans les supermarchés, boutiques de quartier et marchés traditionnels de Brazzaville et Pointe-Noire.",
+    "export_title": "Export international",
+    "export_desc": "Conditionnements adaptés à l'export. Minimum Order Quantity (MOQ) flexible selon les produits.",
+    "partner_title": "Devenir distributeur",
+    "partner_desc": "Rejoignez notre réseau de distributeurs agréés et bénéficiez de conditions préférentielles.",
+    "partner_cta": "Soumettre une demande"
+  },
+  "news": {
+    "title": "Actualités",
+    "subtitle": "Suivez l'actualité de Congo Food Process",
+    "read_more": "Lire la suite",
+    "categories": {
+      "all": "Tout",
+      "products": "Produits",
+      "company": "Entreprise",
+      "export": "Export",
+      "csr": "RSE"
+    }
+  }
+}

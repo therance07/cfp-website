@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "quality": "Quality",
+    "distribution": "Distribution",
+    "news": "News",
+    "contact": "Contact",
+    "cta": "Order / Partner"
+  },
+  "hero": {
+    "title": "From Congo to the World,",
+    "title2": "the Taste of Excellence",
+    "subtitle": "Since 2017, Congo Food Process turns Congolese natural resources into internationally recognized food products.",
+    "cta_products": "Discover our products",
+    "cta_contact": "Contact us"
+  },
+  "stats": {
+    "capacity": "800 kg/day",
+    "capacity_label": "Processing capacity",
+    "since": "2017",
+    "since_label": "Year founded",
+    "employees": "15+",
+    "employees_label": "Employees",
+    "ranges": "7",
+    "ranges_label": "Product ranges",
+    "suppliers": "10+",
+    "suppliers_label": "Local suppliers"
+  },
+  "why_cfp": {
+    "title": "Why choose CFP?",
+    "subtitle": "Four reasons to trust us",
+    "quality_title": "Certified quality",
+    "quality_desc": "Rigorous control at every stage, from raw materials to finished product. Full traceability.",
+    "local_title": "100% local",
+    "local_desc": "Primarily sourced from Congolese producers. Every CFP product supports national agriculture.",
+    "innovation_title": "Continuous innovation",
+    "innovation_desc": "Ongoing R&D for new ranges adapted to both local and international markets.",
+    "export_title": "Export ambition",
+    "export_desc": "Products compliant with international standards, ready for North America and Africa."
+  },
+  "products": {
+    "title": "Our flagship products",
+    "subtitle": "Discover our ranges crafted with passion",
+    "view_all": "View all products",
+    "made_in_congo": "Made in Congo",
+    "order_cta": "Order",
+    "details_cta": "View details"
+  },
+  "process": {
+    "title": "Our transformation process",
+    "subtitle": "From raw peanut to finished product — excellence at every step",
+    "step1_title": "Raw material selection",
+    "step1_desc": "Sourcing from certified local producers, quality control upon receipt.",
+    "step2_title": "Cleaning & sorting",
+    "step2_desc": "Removal of impurities, calibration and selection of the best grains.",
+    "step3_title": "Transformation",
+    "step3_desc": "Roasting, grinding or coating depending on the range — 100% controlled processes.",
+    "step4_title": "Quality control",
+    "step4_desc": "Organoleptic, bacteriological and compliance tests before packaging.",
+    "step5_title": "Packaging",
+    "step5_desc": "Hygienic packaging, bilingual labelling, batch-by-batch traceability.",
+    "step6_title": "Distribution",
+    "step6_desc": "Local market delivery and international export according to orders."
+  },
+  "b2b": {
+    "title": "Are you a distributor or importer?",
+    "subtitle": "CFP offers export-ready packaging, flexible MOQs and full support for your distribution projects.",
+    "cta": "Let's discuss your project",
+    "cta_order": "Place a B2B order"
+  },
+  "testimonials": {
+    "title": "They trust us",
+    "subtitle": "Partner distributors and loyal customers"
+  },
+  "certifications": {
+    "title": "Quality & Commitments",
+    "subtitle": "Rigorous standards for reliable products"
+  },
+  "footer": {
+    "tagline": "Transforming Congo, Feeding the World",
+    "nav_title": "Navigation",
+    "products_title": "Products",
+    "contact_title": "Contact",
+    "social_title": "Follow us",
+    "address": "No. 7 Lifou Mpila abattoir street (SIASIC zone), Brazzaville",
+    "phone": "+242 06 515 82 96",
+    "email": "contact@congofoodprocess.cg",
+    "copyright": "© 2017-2026 Congo Food Process. All rights reserved."
+  },
+  "b2b_banner": {
+    "text": "Are you a professional? Contact our export team →",
+    "cta": "B2B Request"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Our team is available Monday to Friday from 8am to 5pm",
+    "form_name": "Full name",
+    "form_email": "Email address",
+    "form_phone": "Phone",
+    "form_subject": "Subject",
+    "form_message": "Your message",
+    "form_submit": "Send message",
+    "form_success": "Message sent! We will reply within 24 hours.",
+    "form_error": "An error occurred. Please try again.",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "order": {
+    "title": "B2B Order",
+    "subtitle": "For distributors, importers and professionals",
+    "form_company": "Company name",
+    "form_contact": "Contact name",
+    "form_email": "Professional email",
+    "form_phone": "Phone number",
+    "form_country": "Country",
+    "form_products": "Products of interest",
+    "form_quantity": "Estimated quantity",
+    "form_message": "Additional information",
+    "form_submit": "Submit request",
+    "form_success": "Request received! Our team will contact you within 48 hours.",
+    "form_error": "An error occurred. Please try again."
+  },
+  "about": {
+    "title": "Our story",
+    "subtitle": "A company born from the vision of valorising Congolese resources",
+    "history": "Founded in 2017 by a team of Congolese agri-food entrepreneurs, Congo Food Process was born from a simple observation: Congo is rich in quality natural resources, particularly peanuts, that deserve local processing with high added value.",
+    "mission_title": "Our mission",
+    "mission": "Transform Congo's agricultural wealth into internationally-quality food products, create local employment and contribute to national food sovereignty.",
+    "values_title": "Our values",
+    "value1": "Quality",
+    "value2": "Transparency",
+    "value3": "Innovation",
+    "value4": "Ethics",
+    "value5": "Proximity",
+    "team_title": "Our leadership team",
+    "factory_title": "Our Mpila factory",
+    "factory_desc": "Located in the Mpila industrial zone (SIASIC zone) in Brazzaville, our factory has a processing capacity of 800 kg of peanuts per day with modern equipment meeting food hygiene standards."
+  },
+  "quality": {
+    "title": "Quality & Certifications",
+    "subtitle": "Rigorous standards at every step of production",
+    "policy_title": "Our quality policy",
+    "policy_desc": "At CFP, quality is not an option — it is our foundation. Every batch is traced, controlled and validated before distribution.",
+    "standards_title": "Standards met",
+    "lab_title": "Control laboratory",
+    "lab_desc": "Microbiological analyses, organoleptic tests and physico-chemical checks at every stage of production.",
+    "export_title": "Export compliance",
+    "export_desc": "Technical documentation available for international buyers: technical sheets, analysis certificates, nutritional balance sheets."
+  },
+  "distribution": {
+    "title": "Distribution & Export",
+    "subtitle": "From Congo to the world",
+    "national_title": "National distribution",
+    "national_desc": "Present in supermarkets, neighbourhood shops and traditional markets in Brazzaville and Pointe-Noire.",
+    "export_title": "International export",
+    "export_desc": "Export-ready packaging. Flexible Minimum Order Quantity (MOQ) depending on products.",
+    "partner_title": "Become a distributor",
+    "partner_desc": "Join our network of approved distributors and benefit from preferential conditions.",
+    "partner_cta": "Submit an application"
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Follow Congo Food Process news",
+    "read_more": "Read more",
+    "categories": {
+      "all": "All",
+      "products": "Products",
+      "company": "Company",
+      "export": "Export",
+      "csr": "CSR"
+    }
+  }
+}

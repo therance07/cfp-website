@@ -3,25 +3,132 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary:         #F26522;
+  --color-primary-dark:    #D4541A;
+  --color-secondary:       #2E7D1F;
+  --color-secondary-light: #4CAF30;
+  --color-dark:            #1A0F00;
+  --color-white:           #FFFFFF;
+  --color-cream:           #FFF8F0;
+  --color-gray-light:      #F5F5F5;
+  --color-text:            #2D2D2D;
+
+  --font-heading:   var(--font-montserrat), 'Montserrat', sans-serif;
+  --font-body:      var(--font-nunito), 'Nunito Sans', sans-serif;
+  --font-label:     var(--font-barlow), 'Barlow Condensed', sans-serif;
+
+  --header-height: 80px;
+  --shadow-card:   0 4px 24px rgba(26, 15, 0, 0.08);
+  --shadow-strong: 0 8px 40px rgba(26, 15, 0, 0.16);
+  --radius-card:   12px;
+  --radius-btn:    8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-dark);
+  }
+
+  h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+  h2 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
+  h3 { font-size: clamp(1.2rem, 2.5vw, 1.75rem); }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white transition-all duration-200;
+    background-color: var(--color-primary);
+    font-family: var(--font-body);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(242, 101, 34, 0.35);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    font-family: var(--font-body);
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-family: var(--font-body);
+  }
+  .btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .section-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: var(--color-dark);
+  }
+
+  .label-tag {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+
+  .card {
+    background: var(--color-white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+
+  .section-white  { background-color: var(--color-white); }
+  .section-cream  { background-color: var(--color-cream); }
+  .section-dark   { background-color: var(--color-dark); }
+  .section-green  { background-color: var(--color-secondary); }
+  .section-orange { background-color: var(--color-primary); }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  .text-balance { text-wrap: balance; }
+  .font-heading { font-family: var(--font-heading); }
+  .font-body    { font-family: var(--font-body); }
+  .font-label   { font-family: var(--font-label); }
+
+  .text-primary       { color: var(--color-primary); }
+  .text-secondary     { color: var(--color-secondary); }
+  .text-dark          { color: var(--color-dark); }
+  .bg-primary         { background-color: var(--color-primary); }
+  .bg-secondary       { background-color: var(--color-secondary); }
+  .bg-cream           { background-color: var(--color-cream); }
+
+  .hero-padding { padding-top: 90px; }
+  @media (min-width: 768px) { .hero-padding { padding-top: 80px; } }
 }
