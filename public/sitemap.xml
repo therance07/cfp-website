@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ── Accueil ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ── Produits (liste) ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/produits</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ── Produits (fiches détail) ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/pate-arachide-nature</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/pate-arachide-nature"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/pate-arachide-nature"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/pate-arachide-nature</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/beurre-arachide-croustillant</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/beurre-arachide-croustillant"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/beurre-arachide-croustillant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/beurre-arachide-croustillant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/chips-banane-plantain</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/chips-banane-plantain"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/chips-banane-plantain"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/chips-banane-plantain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/arachides-enrobees-piment</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-enrobees-piment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-enrobees-piment"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/arachides-enrobees-piment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/beurre-arachide-lisse</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/beurre-arachide-lisse"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/beurre-arachide-lisse"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/beurre-arachide-lisse</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/arachides-sucrees-caramel</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-sucrees-caramel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-sucrees-caramel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/arachides-sucrees-caramel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/croquettes-arachide</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/croquettes-arachide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/croquettes-arachide"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/croquettes-arachide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/arachides-salees-grillees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-salees-grillees"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-salees-grillees"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/arachides-salees-grillees</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── À Propos ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/a-propos</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/a-propos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/a-propos"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/a-propos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Qualité ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/qualite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/qualite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/qualite"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/qualite</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Distribution ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/distribution</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/distribution"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/distribution"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/distribution</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Contact ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/contact"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ── Actualités (liste) ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/actualites</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/actualites"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/actualites"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/actualites</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Actualités (articles) ── -->
+  <url>
+    <loc>https://www.congofoodprocess.com/actualites/lancement-beurre-arachide-lisse-2024</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/actualites/lancement-beurre-arachide-lisse-2024"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/actualites/lancement-beurre-arachide-lisse-2024"/>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/actualites/lancement-beurre-arachide-lisse-2024</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/actualites/cfp-salon-agroalimentaire-dakar-2024</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/actualites/cfp-salon-agroalimentaire-dakar-2024"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/actualites/cfp-salon-agroalimentaire-dakar-2024"/>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/actualites/cfp-salon-agroalimentaire-dakar-2024</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/actualites/programme-formation-femmes-agriculteurs-mpila</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/actualites/programme-formation-femmes-agriculteurs-mpila"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/actualites/programme-formation-femmes-agriculteurs-mpila"/>
+    <lastmod>2024-08-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/actualites/programme-formation-femmes-agriculteurs-mpila</loc>
+    <lastmod>2024-08-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/actualites/cfp-nouveau-site-production-2024</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/actualites/cfp-nouveau-site-production-2024"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/actualites/cfp-nouveau-site-production-2024"/>
+    <lastmod>2024-05-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/actualites/cfp-nouveau-site-production-2024</loc>
+    <lastmod>2024-05-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
