@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { MessageSquare, ShoppingCart, Users, AlertCircle, TrendingUp } from 'lucide-react';
-import { Link } from '@/i18n/navigation';
+import Link from 'next/link';
 import StatCard   from '@/components/admin/StatCard';
 import { getAdminStats, getContacts, getCommandes } from '@/lib/actions/admin';
 

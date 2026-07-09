@@ -4,7 +4,13 @@ import { Montserrat, Nunito_Sans, Barlow_Condensed } from 'next/font/google';
 import AdminShell from '@/components/admin/AdminShell';
 
 const montserrat     = Montserrat({ subsets: ['latin'], variable: '--font-montserrat', weight: ['400','600','700','800','900'], display: 'swap' });
-const nunitoSans     = Nunito_Sans({ subsets: ['latin'], variable: '--font-nunito', weight: ['300','400','600','700'], display: 'swap' });
+const nunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+  variable: '--font-nunito',
+  weight: ['300','400','600','700'],
+  display: 'swap',
+  adjustFontFallback: false,
+});
 const barlowCondensed = Barlow_Condensed({ subsets: ['latin'], variable: '--font-barlow', weight: ['400','500','600','700'], display: 'swap' });
 
 export const metadata: Metadata = {
