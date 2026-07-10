@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import SectionWrapper from '@/components/SectionWrapper';
 import Badge          from '@/components/ui/Badge';
 import { getNewsBySlug, news } from '@/lib/news';
@@ -61,6 +62,8 @@ function renderContent(content: string) {
 }
 
 export default async function ArticleDetailPage({ params: { locale, slug } }: Props) {
+  setRequestLocale(locale);
+
   const article = getNewsBySlug(slug);
   if (!article) notFound();
 

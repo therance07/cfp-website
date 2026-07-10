@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { CheckCircle, Package, ArrowLeft } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import SectionWrapper    from '@/components/SectionWrapper';
 import Button            from '@/components/ui/Button';
 import Badge             from '@/components/ui/Badge';
@@ -47,6 +48,8 @@ const USES = [
 ];
 
 export default async function ProductDetailPage({ params: { locale, slug } }: Props) {
+  setRequestLocale(locale);
+
   const product = getProductBySlug(slug);
   if (!product) notFound();
 
