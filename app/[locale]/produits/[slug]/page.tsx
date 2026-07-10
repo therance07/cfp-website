@@ -134,6 +134,23 @@ export default async function ProductDetailPage({ params: { locale, slug } }: Pr
               </div>
             )}
 
+            {/* Variantes */}
+            {product.variantes && product.variantes.length > 0 && (
+              <div>
+                <p className="font-semibold text-[var(--color-dark)] text-sm mb-3">Variantes disponibles</p>
+                <div className="flex flex-wrap gap-2">
+                  {product.variantes.map((v) => (
+                    <span
+                      key={v}
+                      className="px-3 py-1.5 rounded-lg border-2 border-[var(--color-secondary)]/20 bg-[var(--color-cream)] text-[var(--color-dark)] text-sm font-semibold"
+                    >
+                      {v}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Usages */}
             <div>
               <p className="font-semibold text-[var(--color-dark)] text-sm mb-3">Utilisations</p>

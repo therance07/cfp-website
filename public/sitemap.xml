@@ -49,53 +49,40 @@
   </url>
 
   <url>
-    <loc>https://www.congofoodprocess.com/produits/beurre-arachide-croustillant</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/beurre-arachide-croustillant"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/beurre-arachide-croustillant"/>
+    <loc>https://www.congofoodprocess.com/produits/beurre-cacahouete-nature</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/beurre-cacahouete-nature"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/beurre-cacahouete-nature"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.congofoodprocess.com/en/produits/beurre-arachide-croustillant</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.congofoodprocess.com/produits/chips-banane-plantain</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/chips-banane-plantain"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/chips-banane-plantain"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.congofoodprocess.com/en/produits/chips-banane-plantain</loc>
+    <loc>https://www.congofoodprocess.com/en/produits/beurre-cacahouete-nature</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.congofoodprocess.com/produits/arachides-enrobees-piment</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-enrobees-piment"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-enrobees-piment"/>
+    <loc>https://www.congofoodprocess.com/produits/arachides-enrobees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-enrobees"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-enrobees"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.congofoodprocess.com/en/produits/arachides-enrobees-piment</loc>
+    <loc>https://www.congofoodprocess.com/en/produits/arachides-enrobees</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.congofoodprocess.com/produits/beurre-arachide-lisse</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/beurre-arachide-lisse"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/beurre-arachide-lisse"/>
+    <loc>https://www.congofoodprocess.com/produits/arachides-salees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-salees"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-salees"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.congofoodprocess.com/en/produits/beurre-arachide-lisse</loc>
+    <loc>https://www.congofoodprocess.com/en/produits/arachides-salees</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -114,27 +101,79 @@
   </url>
 
   <url>
-    <loc>https://www.congofoodprocess.com/produits/croquettes-arachide</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/croquettes-arachide"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/croquettes-arachide"/>
+    <loc>https://www.congofoodprocess.com/produits/arachides-pimente</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-pimente"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-pimente"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.congofoodprocess.com/en/produits/croquettes-arachide</loc>
+    <loc>https://www.congofoodprocess.com/en/produits/arachides-pimente</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.congofoodprocess.com/produits/arachides-salees-grillees</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-salees-grillees"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-salees-grillees"/>
+    <loc>https://www.congofoodprocess.com/produits/arachides-mais</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/arachides-mais"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/arachides-mais"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.congofoodprocess.com/en/produits/arachides-salees-grillees</loc>
+    <loc>https://www.congofoodprocess.com/en/produits/arachides-mais</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/chips-plantain-salees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/chips-plantain-salees"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/chips-plantain-salees"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/chips-plantain-salees</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/chips-plantain-sucrees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/chips-plantain-sucrees"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/chips-plantain-sucrees"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/chips-plantain-sucrees</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/croquettes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/croquettes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/croquettes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/croquettes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.congofoodprocess.com/produits/beignets-souffles</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.congofoodprocess.com/produits/beignets-souffles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.congofoodprocess.com/en/produits/beignets-souffles"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.congofoodprocess.com/en/produits/beignets-souffles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

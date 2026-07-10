@@ -16,6 +16,7 @@ export interface ProductCardData {
   category: string;
   categoryLabel: string;
   conditionnements?: string[];
+  variantes?: string[];
   isNew?: boolean;
   isBestSeller?: boolean;
 }

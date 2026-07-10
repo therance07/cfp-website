@@ -39,12 +39,12 @@ const NAV_LINKS = [
 ] as const;
 
 const PRODUCT_LINKS = [
-  { href: '/produits/pate-arachide-nature',      label: "Pâte d'arachide" },
-  { href: '/produits/beurre-arachide-croustillant', label: "Beurre d'arachide" },
-  { href: '/produits/chips-banane-plantain',     label: 'Chips de plantain' },
-  { href: '/produits/arachides-enrobees-piment', label: 'Arachides enrobées' },
-  { href: '/produits/croquettes-arachide',       label: 'Croquettes' },
-  { href: '/produits/arachides-salees-grillees', label: 'Arachides grillées' },
+  { href: '/produits/pate-arachide-nature',       label: "Pâte d'arachide nature" },
+  { href: '/produits/beurre-cacahouete-nature',   label: 'Beurre de cacahouète nature' },
+  { href: '/produits/chips-plantain-salees',      label: 'Chips de plantain' },
+  { href: '/produits/arachides-enrobees',         label: 'Arachides enrobées' },
+  { href: '/produits/croquettes',                 label: 'Croquettes' },
+  { href: '/produits/arachides-salees',           label: 'Arachides salées' },
 ] as const;
 
 export default function Footer() {
