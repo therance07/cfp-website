@@ -19,7 +19,7 @@ export default function HeroSection({ locale: _locale }: HeroSectionProps) {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Section hero">
       {/* Background image */}
       <Image
-        src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=1920&q=80"
+        src="/images/hero-arachide.webp"
         alt="Arachides Congo Food Process"
         fill
         priority
