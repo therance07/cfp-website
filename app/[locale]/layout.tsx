@@ -7,6 +7,7 @@ import Header        from '@/components/layout/Header';
 import Footer        from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/layout/WhatsAppButton';
 import B2BBanner     from '@/components/layout/B2BBanner';
+import { CartProvider } from '@/components/cart/CartContext';
 import '../globals.css';
 
 const montserrat = Montserrat({
@@ -77,11 +78,13 @@ export default async function LocaleLayout({
     >
       <body className="font-body antialiased">
         <NextIntlClientProvider messages={messages}>
-          <B2BBanner />
-          <Header />
-          <main id="main-content">{children}</main>
-          <Footer />
-          <WhatsAppButton />
+          <CartProvider>
+            <B2BBanner />
+            <Header />
+            <main id="main-content">{children}</main>
+            <Footer />
+            <WhatsAppButton />
+          </CartProvider>
         </NextIntlClientProvider>
       </body>
     </html>

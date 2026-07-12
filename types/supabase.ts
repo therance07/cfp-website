@@ -49,29 +49,47 @@ export interface ContactInsert {
   lu?: boolean;
 }
 
+export interface CommandeProduit {
+  produit_id: string;
+  nom: string;
+  quantite: number;
+  prix_unitaire: number;
+  variante: string | null;
+}
+
 export interface Commande {
   id: string;
-  entreprise: string;
+  type: 'B2B' | 'B2C';
+  entreprise: string | null;
   contact_nom: string;
-  email: string;
+  email: string | null;
   telephone: string;
-  pays: string;
-  produits_interesses: string;
+  pays: string | null;
+  produits_interesses: string | null;
   quantite_estimee: string | null;
   message: string | null;
+  produits: CommandeProduit[] | null;
+  montant_total: number | null;
+  ville: string | null;
+  adresse_livraison: string | null;
   statut: 'en_attente' | 'en_traitement' | 'confirmee';
   created_at: string;
 }
 
 export interface CommandeInsert {
-  entreprise: string;
+  type?: 'B2B' | 'B2C';
+  entreprise?: string | null;
   contact_nom: string;
-  email: string;
+  email?: string | null;
   telephone: string;
-  pays: string;
-  produits_interesses: string;
+  pays?: string | null;
+  produits_interesses?: string | null;
   quantite_estimee?: string | null;
   message?: string | null;
+  produits?: CommandeProduit[] | null;
+  montant_total?: number | null;
+  ville?: string | null;
+  adresse_livraison?: string | null;
   statut?: 'en_attente' | 'en_traitement' | 'confirmee';
 }
 

@@ -52,7 +52,7 @@ export default function ContactForm({ locale: _locale }: { locale: string }) {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5" noValidate>
+    <form onSubmit={handleSubmit(onSubmit)} method="post" className="flex flex-col gap-5" noValidate>
       {status === 'error' && <FormFeedback type="error" message={errorMsg} />}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

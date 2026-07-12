@@ -26,8 +26,10 @@ export default function B2BBanner() {
           transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="overflow-hidden"
         >
+          {/* pt-[80px] : le fond du bandeau remonte derrière le header fixe (le rend visible en
+              filigrane pour le contraste du nav transparent) tandis que le contenu clarifie sous le header */}
           <div
-            className="bg-[var(--color-primary)] text-white py-3 px-4"
+            className="bg-[var(--color-primary)] text-white pt-[80px] pb-3 px-4"
             role="banner"
             aria-label="Bandeau professionnel B2B"
           >

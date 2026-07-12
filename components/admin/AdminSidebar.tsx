@@ -9,7 +9,7 @@ import CfpLogo from '@/components/CfpLogo';
 const NAV = [
   { href: '/admin',             icon: LayoutDashboard, label: 'Vue d\'ensemble' },
   { href: '/admin/contacts',    icon: MessageSquare,   label: 'Contacts'        },
-  { href: '/admin/commandes',   icon: ShoppingCart,    label: 'Commandes B2B'   },
+  { href: '/admin/commandes',   icon: ShoppingCart,    label: 'Commandes'       },
   { href: '/admin/partenariats',icon: Users,           label: 'Partenariats'    },
   { href: '/admin/contenu',     icon: FileEdit,        label: 'Contenu site'    },
 ] as const;

@@ -3,10 +3,11 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, ShoppingBag } from 'lucide-react';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import CfpLogo from '@/components/CfpLogo';
 import Button from '@/components/ui/Button';
+import { useCart } from '@/components/cart/CartContext';
 
 const NAV_ITEMS = [
   { href: '/',              key: 'home' },
@@ -20,9 +21,11 @@ const NAV_ITEMS = [
 
 export default function Header() {
   const t = useTranslations('nav');
+  const tCart = useTranslations('cart');
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const { itemCount } = useCart();
 
   const [scrolled, setScrolled]       = useState(false);
   const [mobileOpen, setMobileOpen]   = useState(false);
@@ -110,6 +113,23 @@ export default function Header() {
                 <span>{locale === 'fr' ? 'EN' : 'FR'}</span>
               </button>
 
+              {/* Cart */}
+              <Link
+                href="/panier"
+                className={[
+                  'relative flex items-center justify-center w-9 h-9 rounded-lg transition-all duration-200',
+                  isTransparent ? 'text-white hover:bg-white/15' : 'text-[var(--color-dark)] hover:bg-[var(--color-cream)]',
+                ].join(' ')}
+                aria-label={tCart('icon_label')}
+              >
+                <ShoppingBag size={18} color="currentColor" />
+                {itemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] px-1 rounded-full bg-[var(--color-primary)] text-white text-[10px] font-bold leading-none">
+                    {itemCount}
+                  </span>
+                )}
+              </Link>
+
               {/* CTA */}
               <Button
                 variant={isTransparent ? 'white' : 'primary'}
@@ -135,6 +155,24 @@ export default function Header() {
                 <Globe size={12} color="currentColor" />
                 <span>{locale === 'fr' ? 'EN' : 'FR'}</span>
               </button>
+
+              <Link
+                href="/panier"
+                className={[
+                  'relative flex items-center justify-center w-8 h-8 rounded-lg transition-all',
+                  isTransparent && !mobileOpen
+                    ? 'text-white hover:bg-white/15'
+                    : 'text-[var(--color-dark)] hover:bg-[var(--color-cream)]',
+                ].join(' ')}
+                aria-label={tCart('icon_label')}
+              >
+                <ShoppingBag size={17} color="currentColor" />
+                {itemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 flex items-center justify-center min-w-[16px] h-[16px] px-1 rounded-full bg-[var(--color-primary)] text-white text-[9px] font-bold leading-none">
+                    {itemCount}
+                  </span>
+                )}
+              </Link>
 
               <button
                 onClick={() => setMobileOpen((o) => !o)}

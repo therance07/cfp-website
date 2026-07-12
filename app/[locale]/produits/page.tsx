@@ -27,7 +27,8 @@ export default async function ProduitsPage({ params: { locale } }: { params: { l
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-dark)]/90 via-[var(--color-dark)]/50 to-transparent" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-10 pt-[80px]">
+        {/* pt réduit : la bannière B2B (toujours visible sur cette page) réserve déjà l'espace du header fixe */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-10 pt-6">
           <p className="font-label text-xs text-[var(--color-primary)] uppercase tracking-widest mb-2">
             Made in Congo
           </p>

@@ -9,7 +9,15 @@ export function middleware(request: NextRequest) {
 
   // Admin routes — check for Supabase auth cookie (set by @supabase/ssr on login)
   if (pathname.startsWith('/admin')) {
-    if (pathname === '/admin/login') return NextResponse.next();
+    if (pathname === '/admin/login') {
+      // A POST here can only be the native <form> fallback (auth itself never posts to this URL) — PRG back to a clean GET with a notice.
+      if (request.method === 'POST') {
+        const loginUrl = new URL('/admin/login', request.url);
+        loginUrl.searchParams.set('fallback', '1');
+        return NextResponse.redirect(loginUrl, { status: 303 });
+      }
+      return NextResponse.next();
+    }
 
     // Look for any Supabase session cookie (sb-*-auth-token or sb-access-token)
     const cookies   = request.cookies.getAll();

@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { Suspense, useState, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -17,11 +17,26 @@ const Schema = z.object({
 });
 type FormValues = z.infer<typeof Schema>;
 
+function FallbackNotice() {
+  const isFallback = useSearchParams().get('fallback') === '1';
+  if (!isFallback) return null;
+  return (
+    <div className="mb-5 p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-700 text-sm flex items-center gap-2">
+      <Lock size={14} color="currentColor" />
+      La page n&apos;était pas encore prête au moment de l&apos;envoi. Merci de saisir vos identifiants et réessayer.
+    </div>
+  );
+}
+
 export default function AdminLoginPage() {
   const router  = useRouter();
   const [error, setError]     = useState('');
   const [loading, setLoading] = useState(false);
   const [showPwd, setShowPwd] = useState(false);
+  // Désactive le submit tant que React n'a pas hydraté, pour éviter la soumission HTML native (GET, identifiants en clair dans l'URL).
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => { setMounted(true); }, []);
 
   const { register, handleSubmit, formState: { errors } } = useForm<FormValues>({
     resolver: zodResolver(Schema),
@@ -71,6 +86,12 @@ export default function AdminLoginPage() {
             Connexion réservée à l&apos;équipe CFP
           </p>
 
+          {!error && (
+            <Suspense fallback={null}>
+              <FallbackNotice />
+            </Suspense>
+          )}
+
           {error && (
             <div className="mb-5 p-3 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm flex items-center gap-2">
               <Lock size={14} color="currentColor" />
@@ -78,7 +99,7 @@ export default function AdminLoginPage() {
             </div>
           )}
 
-          <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4" noValidate>
+          <form onSubmit={handleSubmit(onSubmit)} method="post" className="flex flex-col gap-4" noValidate>
             <Input
               label="Email"
               type="email"
@@ -104,7 +125,7 @@ export default function AdminLoginPage() {
               {...register('password')}
               error={errors.password?.message}
             />
-            <Button type="submit" variant="primary" size="lg" fullWidth loading={loading} className="mt-2">
+            <Button type="submit" variant="primary" size="lg" fullWidth loading={loading} disabled={!mounted} className="mt-2">
               Se connecter
             </Button>
           </form>

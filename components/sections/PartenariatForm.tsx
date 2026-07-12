@@ -69,7 +69,7 @@ export default function PartenariatForm({ locale: _locale }: { locale: string })
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5" noValidate>
+    <form onSubmit={handleSubmit(onSubmit)} method="post" className="flex flex-col gap-5" noValidate>
       {status === 'error' && (
         <FormFeedback type="error" message={errorMsg} />
       )}

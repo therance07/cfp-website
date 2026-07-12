@@ -10,7 +10,9 @@ import Badge             from '@/components/ui/Badge';
 import MadeInCongoBadge  from '@/components/MadeInCongoBadge';
 import ProductCard       from '@/components/ProductCard';
 import SectionTitle      from '@/components/SectionTitle';
+import AddToCartDetail   from '@/components/cart/AddToCartDetail';
 import { getProductBySlug, products } from '@/lib/products';
+import { formatPrice } from '@/lib/format';
 
 interface Props {
   params: { locale: string; slug: string };
@@ -60,7 +62,8 @@ export default async function ProductDetailPage({ params: { locale, slug } }: Pr
   return (
     <>
       {/* Breadcrumb */}
-      <div className="bg-[var(--color-cream)] border-b border-gray-100 pt-[80px]">
+      {/* pt réduit : la bannière B2B (toujours visible sur les pages /produits/*) réserve déjà l'espace du header fixe */}
+      <div className="bg-[var(--color-cream)] border-b border-gray-100 pt-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-[var(--color-primary)] transition-colors">Accueil</Link>
           <span>/</span>
@@ -112,6 +115,9 @@ export default async function ProductDetailPage({ params: { locale, slug } }: Pr
               <p className="text-gray-600 text-lg leading-relaxed">
                 {product.description}
               </p>
+              <p className="text-2xl font-bold text-[var(--color-dark)] mt-4">
+                {formatPrice(product.prix)} <span className="text-base font-normal text-gray-500">/ {product.unite}</span>
+              </p>
             </div>
 
             {/* Conditionnements */}
@@ -134,22 +140,8 @@ export default async function ProductDetailPage({ params: { locale, slug } }: Pr
               </div>
             )}
 
-            {/* Variantes */}
-            {product.variantes && product.variantes.length > 0 && (
-              <div>
-                <p className="font-semibold text-[var(--color-dark)] text-sm mb-3">Variantes disponibles</p>
-                <div className="flex flex-wrap gap-2">
-                  {product.variantes.map((v) => (
-                    <span
-                      key={v}
-                      className="px-3 py-1.5 rounded-lg border-2 border-[var(--color-secondary)]/20 bg-[var(--color-cream)] text-[var(--color-dark)] text-sm font-semibold"
-                    >
-                      {v}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
+            {/* Ajouter au panier (sélection de variante incluse si applicable) */}
+            <AddToCartDetail product={product} />
 
             {/* Usages */}
             <div>

@@ -53,7 +53,8 @@ export default function DistributionPage({ params: { locale } }: { params: { loc
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-dark)]/90 via-[var(--color-dark)]/50 to-transparent" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-10 pt-[80px]">
+        {/* pt réduit : la bannière B2B (toujours visible sur cette page) réserve déjà l'espace du header fixe */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-10 pt-6">
           <MadeInCongoBadge className="mb-3" />
           <h1 className="font-heading text-white text-4xl md:text-5xl font-black leading-tight">{t('title')}</h1>
           <p className="text-white/80 text-lg mt-2">{t('subtitle')}</p>

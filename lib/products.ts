@@ -11,6 +11,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Tartinables',
     conditionnements: ['250g', '500g', '1kg', '5kg'],
     isBestSeller: true,
+    prix: 1500,
+    unite: '1 kg',
   },
   {
     slug: 'beurre-cacahouete-nature',
@@ -22,6 +24,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Tartinables',
     conditionnements: ['200g', '400g', '1kg'],
     isBestSeller: true,
+    prix: 2000,
+    unite: '1 kg',
   },
   {
     slug: 'arachides-enrobees',
@@ -32,6 +36,8 @@ export const products: ProductCardData[] = [
     category: 'snacks',
     categoryLabel: 'Snacks',
     conditionnements: ['100g', '250g', '500g'],
+    prix: 1500,
+    unite: '1 kg',
   },
   {
     slug: 'arachides-salees',
@@ -43,6 +49,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Salés',
     conditionnements: ['100g', '250g', '500g', '1kg'],
     isBestSeller: true,
+    prix: 2000,
+    unite: '1 L',
   },
   {
     slug: 'arachides-sucrees-caramel',
@@ -54,6 +62,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Sucrés',
     conditionnements: ['100g', '200g'],
     isNew: true,
+    prix: 1500,
+    unite: '1 L',
   },
   {
     slug: 'arachides-pimente',
@@ -65,6 +75,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Salés',
     conditionnements: ['100g', '250g', '500g', '1kg'],
     isNew: true,
+    prix: 2000,
+    unite: '1 L',
   },
   {
     slug: 'arachides-mais',
@@ -76,6 +88,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Salés',
     conditionnements: ['100g', '250g', '500g', '1kg'],
     isNew: true,
+    prix: 2000,
+    unite: '1 L',
   },
   {
     slug: 'chips-plantain-salees',
@@ -86,6 +100,8 @@ export const products: ProductCardData[] = [
     category: 'snacks',
     categoryLabel: 'Snacks',
     conditionnements: ['50g', '100g', '250g', '1kg'],
+    prix: 500,
+    unite: '300 g',
   },
   {
     slug: 'chips-plantain-sucrees',
@@ -97,6 +113,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Snacks',
     conditionnements: ['50g', '100g', '250g', '1kg'],
     isNew: true,
+    prix: 500,
+    unite: '300 g',
   },
   {
     slug: 'croquettes',
@@ -108,6 +126,8 @@ export const products: ProductCardData[] = [
     categoryLabel: 'Snacks',
     conditionnements: ['80g', '150g', '300g'],
     variantes: ['Nature', 'Pâte d\'arachide', 'Pépites d\'arachide', 'Noix de coco'],
+    prix: 2000,
+    unite: '1 L',
   },
   {
     slug: 'beignets-souffles',
@@ -118,6 +138,8 @@ export const products: ProductCardData[] = [
     category: 'snacks',
     categoryLabel: 'Snacks',
     conditionnements: ['100g', '250g', '500g'],
+    prix: 1000,
+    unite: '500 g',
   },
 ];
 
