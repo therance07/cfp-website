@@ -7,6 +7,7 @@ import SectionWrapper   from '@/components/SectionWrapper';
 import SectionTitle     from '@/components/SectionTitle';
 import MadeInCongoBadge from '@/components/MadeInCongoBadge';
 import AnimatedCounter  from '@/components/AnimatedCounter';
+import { products }     from '@/lib/products';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   return {
@@ -26,11 +27,13 @@ const VALUES = [
   { icon: MapPin,     label: 'Ancrage Congo',  desc: 'Fiers de valoriser les ressources naturelles congolaises pour le monde.' },
 ];
 
-const TEAM = [
-  { name: 'Évariste Mavoungou', role: 'Directeur Général & Co-fondateur', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
-  { name: 'Clarisse Bitsindou', role: 'Directrice Qualité & Production', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80' },
-  { name: 'Roland Ngakosso',    role: 'Directeur Commercial & Export',   image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
-  { name: 'Pélagie Moukengue',  role: 'Responsable RSE & Partenariats', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80' },
+// TODO: remplacer par vraies photos — en attente (Serge Nzepa et Christ Tchokongue)
+const TEAM: { name: string; role: string; image: string | null }[] = [
+  { name: 'Philippe Sitcheu',    role: 'PDG',                     image: '/images/philippe-sitcheu.webp' },
+  { name: 'Joseph Essono',       role: 'DG',                       image: '/images/joseph-essono.webp' },
+  { name: 'Paul Gille Nanda',    role: 'Conseil financier',        image: '/images/paul-gille-nanda.webp' },
+  { name: 'Serge Nzepa',         role: 'Conseil Juridique',        image: null },
+  { name: 'Christ Tchokongue',   role: 'Gestionnaire de stock',    image: null },
 ];
 
 export default function AProposPage({ params: { locale: _locale } }: { params: { locale: string } }) {
@@ -41,7 +44,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
       {/* Hero */}
       <section className="relative h-80 md:h-[420px] flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80"
+          src="/images/notre-histoire.webp"
           alt="Équipe Congo Food Process"
           fill priority sizes="100vw"
           className="object-cover"
@@ -69,14 +72,14 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
             <p className="text-gray-600 leading-relaxed mb-4">{t('history')}</p>
             <p className="text-gray-600 leading-relaxed mb-6">
               Partis de zéro en 2017 avec une première presse artisanale, les fondateurs de CFP ont progressivement
-              mécanisé l&apos;atelier, formé une équipe locale et développé une gamme de 7 produits désormais distribués
+              mécanisé l&apos;atelier, formé une équipe locale et développé une gamme de {products.length} produits désormais distribués
               à Brazzaville, Pointe-Noire et à l&apos;international.
             </p>
             <div className="grid grid-cols-3 gap-4">
               {[
                 { val: 800, suf: ' kg', lbl: 'Capacité/jour' },
                 { val: 15,  suf: '+',  lbl: 'Employés' },
-                { val: 7,   suf: '',   lbl: 'Gammes' },
+                { val: products.length, suf: '', lbl: 'Gammes' },
               ].map(({ val, suf, lbl }) => (
                 <div key={lbl} className="text-center p-4 bg-[var(--color-cream)] rounded-xl">
                   <p className="font-heading text-3xl font-black text-[var(--color-primary)]">
@@ -88,6 +91,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
             </div>
           </div>
           <div className="relative h-80 md:h-[420px] rounded-2xl overflow-hidden">
+            {/* TODO: image Unsplash dupliquée (identique à la section Usine plus bas) — remplacer par une photo dédiée */}
             <Image
               src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1200&q=80"
               alt="Usine CFP à Mpila"
@@ -148,7 +152,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
           title={t('team_title')}
           className="mb-12"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-10">
           {TEAM.map(({ name, role, image }, i) => (
             <MotionDiv
               key={name}
@@ -156,10 +160,18 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12 }}
-              className="text-center"
+              className="text-center w-36 sm:w-40"
             >
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[var(--color-cream)]">
-                <Image src={image} alt={name} fill sizes="128px" className="object-cover" />
+                {image ? (
+                  <Image src={image} alt={name} fill sizes="128px" className="object-cover" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-[var(--color-cream)]">
+                    <span className="font-heading text-2xl font-black text-[var(--color-primary)]/50">
+                      {name.split(' ').map((w) => w[0]).join('')}
+                    </span>
+                  </div>
+                )}
               </div>
               <h3 className="font-heading font-bold text-[var(--color-dark)]">{name}</h3>
               <p className="text-[var(--color-primary)] text-sm font-semibold">{role}</p>
@@ -185,6 +197,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
             </ul>
           </div>
           <div className="relative h-72 rounded-2xl overflow-hidden">
+            {/* TODO: image Unsplash dupliquée (identique à la section Histoire plus haut) — remplacer par une photo dédiée */}
             <Image
               src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1200&q=80"
               alt="Atelier de production CFP"

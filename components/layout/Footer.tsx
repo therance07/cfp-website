@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { MapPin, Phone, Mail } from 'lucide-react';
@@ -7,15 +8,6 @@ function FacebookIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="white" aria-hidden="true">
       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-    </svg>
-  );
-}
-function InstagramIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <circle cx="12" cy="12" r="4"/>
-      <circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/>
     </svg>
   );
 }
@@ -67,7 +59,6 @@ export default function Footer() {
             <div className="flex items-center gap-3" aria-label={t('social_title')}>
               {[
                 { href: 'https://facebook.com',  icon: FacebookIcon,  label: 'Facebook' },
-                { href: 'https://instagram.com', icon: InstagramIcon, label: 'Instagram' },
                 { href: 'https://linkedin.com',  icon: LinkedinIcon,  label: 'LinkedIn' },
               ].map(({ href, icon: Icon, label }) => (
                 <a
@@ -176,14 +167,16 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/50 text-xs">{t('copyright')}</p>
-          <div className="flex items-center gap-1">
-            {/* Congo flag */}
-            <span className="inline-flex overflow-hidden rounded-sm" style={{ width: 18, height: 12 }}>
-              <span style={{ display: 'inline-block', width: 6, height: 12, background: '#009A44' }} />
-              <span style={{ display: 'inline-block', width: 6, height: 12, background: '#FBDE4A' }} />
-              <span style={{ display: 'inline-block', width: 6, height: 12, background: '#DC241F' }} />
-            </span>
-            <span className="text-white/40 text-xs ml-1.5">Made in Congo 🇨🇬</span>
+          <div className="flex items-center gap-1.5">
+            <Image
+              src="/images/drapeau-congo.webp"
+              alt=""
+              width={18}
+              height={12}
+              className="rounded-sm object-cover"
+              aria-hidden="true"
+            />
+            <span className="text-white/40 text-xs">Made in Congo</span>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default async function ProduitsPage({ params: { locale } }: { params: { l
       {/* Hero */}
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden" aria-label="Hero Produits">
         <Image
-          src="/images/hero-produits-page.webp"
+          src="/images/arachide-produit.webp"
           alt="Gamme de produits Congo Food Process"
           fill priority
           sizes="100vw"

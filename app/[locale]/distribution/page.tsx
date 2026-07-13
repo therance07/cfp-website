@@ -47,7 +47,7 @@ export default function DistributionPage({ params: { locale } }: { params: { loc
       {/* Hero */}
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80"
+          src="/images/distribution-arachide.webp"
           alt="Distribution Congo Food Process"
           fill priority sizes="100vw"
           className="object-cover"

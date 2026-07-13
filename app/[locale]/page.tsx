@@ -188,7 +188,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
           <div className="flex-1 relative">
             <div className="relative h-72 lg:h-80 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"
+                src="/images/distributeur-importateur.webp"
                 alt="Export international Congo Food Process"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import { products } from '@/lib/products';
 
 interface StatItem {
   value: number;
@@ -16,7 +17,7 @@ const STATS: StatItem[] = [
   { value: 800,  suffix: ' kg',  label: 'Par jour',           sub: "Capacité de transformation" },
   { value: 2017, label: 'Année de fondation', sub: "Une décennie d'expertise", isYear: true },
   { value: 15,   suffix: '+',   label: 'Employés',            sub: 'Équipe qualifiée locale' },
-  { value: 7,    label: 'Gammes',             sub: 'Produits transformés' },
+  { value: products.length, label: 'Gammes',   sub: 'Produits transformés' },
   { value: 10,   suffix: '+',   label: 'Fournisseurs',        sub: 'Partenaires congolais' },
 ];
 

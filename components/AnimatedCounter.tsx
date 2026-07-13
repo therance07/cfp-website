@@ -18,7 +18,7 @@ export default function AnimatedCounter({
   duration = 1800,
   className = '',
 }: AnimatedCounterProps) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
   const ref              = useRef<HTMLSpanElement>(null);
   const isInView         = useInView(ref, { once: true, margin: '-80px' });
   const started          = useRef(false);
@@ -26,6 +26,7 @@ export default function AnimatedCounter({
   useEffect(() => {
     if (!isInView || started.current) return;
     started.current = true;
+    setCount(0);
 
     const startTime = performance.now();
     const tick = (now: number) => {

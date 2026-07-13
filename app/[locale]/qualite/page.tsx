@@ -29,7 +29,7 @@ const CERTIFICATIONS = [
   { name: 'CODEX Alimentarius', body: 'FAO / OMS', status: 'Conforme', desc: 'Normes internationales pour la sécurité et la qualité des denrées alimentaires. CFP respecte les exigences CODEX dans ses processus de transformation.', icon: '🌍' },
   { name: 'HACCP', body: 'Norme internationale', status: 'Conforme', desc: 'Hazard Analysis and Critical Control Points. Système d\'analyse des risques et de maîtrise des points critiques appliqué à toute la chaîne de production.', icon: '🔬' },
   { name: 'ISO 22000', body: 'ISO', status: 'En cours', desc: 'Système de management de la sécurité des denrées alimentaires. Audit externe en cours, certification attendue en 2025.', icon: '📋' },
-  { name: 'Produit du Congo', body: 'Gouvernement RDC', status: 'Obtenu', desc: 'Label officiel de valorisation des produits locaux congolais. Garantit l\'origine et la fabrication nationale.', icon: '🇨🇬' },
+  { name: 'Produit du Congo', body: 'Gouvernement de la République du Congo', status: 'Obtenu', desc: 'Label officiel de valorisation des produits locaux congolais. Garantit l\'origine et la fabrication nationale.', icon: 'flag' },
 ];
 
 export default function QualitePage({ params: { locale: _locale } }: { params: { locale: string } }) {
@@ -40,7 +40,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
       {/* Hero */}
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1581093806997-124204d9fa9d?w=1920&q=80"
+          src="/images/qualite-certieication.webp"
           alt="Contrôle qualité Congo Food Process"
           fill priority sizes="100vw"
           className="object-cover"
@@ -65,6 +65,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
             </p>
           </div>
           <div className="relative h-72 rounded-2xl overflow-hidden">
+            {/* TODO: image Unsplash dupliquée (identique au hero et à la section Laboratoire plus bas) — remplacer par une photo dédiée */}
             <Image
               src="https://images.unsplash.com/photo-1581093806997-124204d9fa9d?w=1200&q=80"
               alt="Laboratoire contrôle qualité"
@@ -112,6 +113,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
       <SectionWrapper bg="dark" py="lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative h-72 rounded-2xl overflow-hidden order-2 lg:order-1">
+            {/* TODO: image Unsplash dupliquée (identique au hero et à la section Politique qualité plus haut) — remplacer par une photo dédiée */}
             <Image
               src="https://images.unsplash.com/photo-1581093806997-124204d9fa9d?w=1200&q=80"
               alt="Laboratoire CFP"
@@ -153,7 +155,13 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
               transition={{ delay: i * 0.1 }}
               className="flex gap-5 p-6 rounded-2xl border border-gray-100 hover:border-[var(--color-primary)]/30 hover:shadow-[var(--shadow-card)] transition-all"
             >
-              <div className="text-3xl flex-shrink-0">{icon}</div>
+              <div className="flex-shrink-0">
+                {icon === 'flag' ? (
+                  <Image src="/images/drapeau-congo.webp" alt="" width={32} height={22} className="rounded-sm object-cover" />
+                ) : (
+                  <div className="text-3xl">{icon}</div>
+                )}
+              </div>
               <div>
                 <div className="flex flex-wrap items-center gap-2 mb-1">
                   <h3 className="font-heading font-bold text-[var(--color-dark)]">{name}</h3>
