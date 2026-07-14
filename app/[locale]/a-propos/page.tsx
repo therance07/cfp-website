@@ -61,38 +61,27 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
 
       {/* Histoire */}
       <SectionWrapper bg="white" py="lg">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <SectionTitle
-              tag="Notre genèse"
-              title="Une histoire ancrée dans le Congo"
-              align="left"
-              className="mb-6"
-            />
-            <p className="text-gray-600 leading-relaxed mb-4 whitespace-pre-line">{t('history')}</p>
-            <div className="grid grid-cols-3 gap-4">
-              {[
-                { val: 800, suf: ' kg', lbl: 'Capacité/jour' },
-                { val: 15,  suf: '+',  lbl: 'Employés' },
-                { val: products.length, suf: '', lbl: 'Gammes' },
-              ].map(({ val, suf, lbl }) => (
-                <div key={lbl} className="text-center p-4 bg-[var(--color-cream)] rounded-xl">
-                  <p className="font-heading text-3xl font-black text-[var(--color-primary)]">
-                    <AnimatedCounter target={val} suffix={suf} />
-                  </p>
-                  <p className="text-xs text-gray-500 mt-1 font-label uppercase tracking-wide">{lbl}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative h-80 md:h-[420px] rounded-2xl overflow-hidden">
-            {/* TODO: image Unsplash dupliquée (identique à la section Usine plus bas) — remplacer par une photo dédiée */}
-            <Image
-              src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1200&q=80"
-              alt="Usine CFP à Mpila"
-              fill sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
+        <div className="max-w-3xl mx-auto">
+          <SectionTitle
+            tag="Notre genèse"
+            title="Une histoire ancrée dans le Congo"
+            align="left"
+            className="mb-6"
+          />
+          <p className="text-gray-600 leading-relaxed mb-4 whitespace-pre-line">{t('history')}</p>
+          <div className="grid grid-cols-3 gap-4 mt-6">
+            {[
+              { val: 800, suf: ' kg', lbl: 'Capacité/jour' },
+              { val: 15,  suf: '+',  lbl: 'Employés' },
+              { val: products.length, suf: '', lbl: 'Gammes' },
+            ].map(({ val, suf, lbl }) => (
+              <div key={lbl} className="text-center p-4 bg-[var(--color-cream)] rounded-xl">
+                <p className="font-heading text-3xl font-black text-[var(--color-primary)]">
+                  <AnimatedCounter target={val} suffix={suf} />
+                </p>
+                <p className="text-xs text-gray-500 mt-1 font-label uppercase tracking-wide">{lbl}</p>
+              </div>
+            ))}
           </div>
         </div>
       </SectionWrapper>
