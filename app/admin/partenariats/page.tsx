@@ -39,7 +39,7 @@ export default async function AdminPartenariatsPage() {
                       {p.type_partenariat}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-gray-600 text-xs">{p.zone_distribution ?? '—'}</td>
+                  <td className="px-4 py-3 text-gray-600 text-xs">{p.zone_distribution ?? '-'}</td>
                   <td className="px-4 py-3 text-gray-600 whitespace-nowrap">{p.pays}</td>
                   <td className="px-4 py-3 text-gray-600">{p.contact_nom}</td>
                   <td className="px-4 py-3 text-gray-400 text-xs whitespace-nowrap">

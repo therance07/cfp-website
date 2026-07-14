@@ -9,7 +9,7 @@ interface CommandeProduitLike {
 }
 
 export function formatCommandeProduits(produits: CommandeProduitLike[] | null): string {
-  if (!produits || produits.length === 0) return '—';
+  if (!produits || produits.length === 0) return '-';
   return produits
     .map((p) => `${p.quantite}× ${p.nom}${p.variante ? ` (${p.variante})` : ''}`)
     .join(', ');

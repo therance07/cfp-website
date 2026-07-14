@@ -6,7 +6,7 @@ import PanierContent from '@/components/cart/PanierContent';
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'cart' });
-  return { title: `${t('title')} — Congo Food Process` };
+  return { title: t('title') };
 }
 
 export default async function PanierPage({ params: { locale } }: { params: { locale: string } }) {

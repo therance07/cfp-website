@@ -131,7 +131,7 @@ export default function AdminLoginPage() {
           </form>
 
           <p className="text-center text-xs text-gray-400 mt-6">
-            Accès restreint — Congo Food Process © 2026
+            Accès restreint | Congo Food Process © 2026
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ import Badge            from '@/components/ui/Badge';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   return {
-    title: locale === 'fr' ? 'Qualité & Certifications — Congo Food Process' : 'Quality & Certifications — Congo Food Process',
+    title: locale === 'fr' ? 'Qualité & Certifications' : 'Quality & Certifications',
     description: locale === 'fr'
       ? 'Politique qualité, certifications et contrôles rigoureux de Congo Food Process pour des produits alimentaires sûrs et fiables.'
       : 'Quality policy, certifications and rigorous controls of Congo Food Process for safe and reliable food products.',
@@ -81,7 +81,7 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
         <SectionTitle
           tag="Étape par étape"
           title="Notre processus qualité"
-          subtitle="De la matière première au produit fini — la qualité contrôlée à chaque étape"
+          subtitle="De la matière première au produit fini : la qualité contrôlée à chaque étape"
           className="mb-12"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

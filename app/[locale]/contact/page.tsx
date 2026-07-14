@@ -8,10 +8,10 @@ import CommandeForm    from '@/components/sections/CommandeForm';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   return {
-    title: locale === 'fr' ? 'Contact — Congo Food Process' : 'Contact — Congo Food Process',
+    title: 'Contact',
     description: locale === 'fr'
-      ? 'Contactez Congo Food Process à Brazzaville — formulaire de contact, commande B2B et coordonnées.'
-      : 'Contact Congo Food Process in Brazzaville — contact form, B2B order and coordinates.',
+      ? 'Contactez Congo Food Process à Brazzaville : formulaire de contact, commande B2B et coordonnées.'
+      : 'Contact Congo Food Process in Brazzaville: contact form, B2B order and coordinates.',
   };
 }
 
@@ -89,8 +89,8 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                title="Congo Food Process — Zone SIASIC Mpila, Brazzaville"
-                aria-label="Carte Google Maps — Usine CFP à Mpila, Brazzaville"
+                title="Congo Food Process, Zone SIASIC Mpila, Brazzaville"
+                aria-label="Carte Google Maps, Usine CFP à Mpila, Brazzaville"
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
           <SectionTitle
             tag="Professionnels"
             title="Commande B2B"
-            subtitle="Distributeurs, importateurs, restaurateurs — soumettez votre demande de devis."
+            subtitle="Distributeurs, importateurs, restaurateurs : soumettez votre demande de devis."
             theme="light"
             className="mb-10"
           />

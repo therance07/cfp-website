@@ -15,7 +15,7 @@ interface StatItem {
 
 const STATS: StatItem[] = [
   { value: 800,  suffix: ' kg',  label: 'Par jour',           sub: "Capacité de transformation" },
-  { value: 2017, label: 'Année de fondation', sub: "Une décennie d'expertise", isYear: true },
+  { value: 2017, label: 'Racines de l\'activité', sub: 'Un savoir-faire artisanal devenu industriel', isYear: true },
   { value: 15,   suffix: '+',   label: 'Employés',            sub: 'Équipe qualifiée locale' },
   { value: products.length, label: 'Gammes',   sub: 'Produits transformés' },
   { value: 10,   suffix: '+',   label: 'Fournisseurs',        sub: 'Partenaires congolais' },

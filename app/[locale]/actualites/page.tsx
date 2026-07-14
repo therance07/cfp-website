@@ -9,7 +9,7 @@ import { news } from '@/lib/news';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   return {
-    title: locale === 'fr' ? 'Actualités — Congo Food Process' : 'News — Congo Food Process',
+    title: locale === 'fr' ? 'Actualités' : 'News',
     description: locale === 'fr'
       ? 'Suivez les dernières actualités de Congo Food Process : nouveaux produits, export, RSE, croissance.'
       : 'Follow the latest news from Congo Food Process: new products, export, CSR, growth.',

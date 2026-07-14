@@ -45,7 +45,7 @@ export async function generateMetadata({
 
   return {
     title: {
-      default: 'Congo Food Process — Transformation Agroalimentaire',
+      default: 'Congo Food Process | Transformation Agroalimentaire',
       template: '%s | Congo Food Process',
     },
     description: t('subtitle'),

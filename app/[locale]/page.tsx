@@ -18,7 +18,7 @@ import StatsSection   from '@/components/sections/StatsSection';
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'hero' });
   return {
-    title: 'Congo Food Process — Transformation Agroalimentaire',
+    title: 'Congo Food Process | Transformation Agroalimentaire',
     description: t('subtitle'),
   };
 }
@@ -41,7 +41,7 @@ const PROCESS_STEPS = [
 
 const CERTS = [
   { label: 'CODEX Alimentarius', desc: 'Normes internationales pour la sécurité des aliments' },
-  { label: 'HACCP',              desc: 'Hazard Analysis Critical Control Points — maîtrise des risques' },
+  { label: 'HACCP',              desc: 'Hazard Analysis Critical Control Points : maîtrise des risques' },
   { label: 'ISO 22000',          desc: 'Système de management de la sécurité des denrées alimentaires (en cours)' },
   { label: 'Produit du Congo',   desc: 'Label officiel de valorisation des productions nationales' },
 ];
@@ -161,7 +161,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
       {/* ── B2B ──────────────────────────────────────── */}
       <SectionWrapper bg="green" py="lg">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-          <div className="flex-1 text-white">
+          <div className="flex-1 w-full text-white">
             <p className="font-label text-xs uppercase tracking-widest text-white/70 mb-3">
               Professionnels & Importateurs
             </p>
@@ -185,7 +185,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
               </Link>
             </div>
           </div>
-          <div className="flex-1 relative">
+          <div className="flex-1 w-full relative">
             <div className="relative h-72 lg:h-80 rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/distributeur-importateur.webp"
@@ -209,7 +209,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <SectionTitle
           tag="Ils nous font confiance"
           title="Nos partenaires témoignent"
-          subtitle="Distributeurs, importateurs et clients — ils partagent leur expérience avec CFP"
+          subtitle="Distributeurs, importateurs et clients : ils partagent leur expérience avec CFP"
           className="mb-12"
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -282,7 +282,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
             Prêt à commander ou devenir partenaire ?
           </h2>
           <p className="text-white/85 text-lg mb-8 leading-relaxed">
-            Contactez notre équipe pour discuter de vos besoins — particulier, distributeur ou importateur.
+            Contactez notre équipe pour discuter de vos besoins : particulier, distributeur ou importateur.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

@@ -11,10 +11,10 @@ import { products }     from '@/lib/products';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   return {
-    title: locale === 'fr' ? 'À Propos — Congo Food Process' : 'About Us — Congo Food Process',
+    title: locale === 'fr' ? 'À Propos' : 'About Us',
     description: locale === 'fr'
-      ? 'Découvrez l\'histoire, la mission et les valeurs de Congo Food Process, fondée en 2017 à Brazzaville.'
-      : 'Discover the history, mission and values of Congo Food Process, founded in 2017 in Brazzaville.',
+      ? 'Découvrez l\'histoire, la mission et les valeurs de Congo Food Process, née d\'un savoir-faire artisanal développé depuis 2017 à Brazzaville.'
+      : 'Discover the history, mission and values of Congo Food Process, born from artisanal expertise developed since 2017 in Brazzaville.',
   };
 }
 
@@ -69,12 +69,7 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
               align="left"
               className="mb-6"
             />
-            <p className="text-gray-600 leading-relaxed mb-4">{t('history')}</p>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Partis de zéro en 2017 avec une première presse artisanale, les fondateurs de CFP ont progressivement
-              mécanisé l&apos;atelier, formé une équipe locale et développé une gamme de {products.length} produits désormais distribués
-              à Brazzaville, Pointe-Noire et à l&apos;international.
-            </p>
+            <p className="text-gray-600 leading-relaxed mb-4 whitespace-pre-line">{t('history')}</p>
             <div className="grid grid-cols-3 gap-4">
               {[
                 { val: 800, suf: ' kg', lbl: 'Capacité/jour' },

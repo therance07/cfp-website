@@ -7,7 +7,7 @@ import ProductsGrid      from '@/components/sections/ProductsGrid';
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'products' });
   return {
-    title: locale === 'fr' ? 'Nos Produits — Congo Food Process' : 'Our Products — Congo Food Process',
+    title: locale === 'fr' ? 'Nos Produits' : 'Our Products',
     description: t('subtitle'),
   };
 }

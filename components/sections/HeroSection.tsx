@@ -58,7 +58,7 @@ export default function HeroSection({ locale: _locale }: HeroSectionProps) {
           >
             <MadeInCongoBadge size="md" />
             <span className="font-label text-xs text-white/70 uppercase tracking-widest">
-              Depuis 2017 · Zone industrielle Mpila, Brazzaville
+              {t('badge')}
             </span>
           </motion.div>
 

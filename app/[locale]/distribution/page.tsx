@@ -9,7 +9,7 @@ import PartenariatForm      from '@/components/sections/PartenariatForm';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   return {
-    title: locale === 'fr' ? 'Distribution & Export — Congo Food Process' : 'Distribution & Export — Congo Food Process',
+    title: 'Distribution & Export',
     description: locale === 'fr'
       ? 'Distribution nationale au Congo et export international. Devenez distributeur agréé Congo Food Process.'
       : 'National distribution in Congo and international export. Become an authorised Congo Food Process distributor.',
@@ -27,7 +27,7 @@ const EXPORT_TARGETS = [
   { region: 'Amérique du Nord', flag: '🇨🇦🇺🇸', detail: 'Communautés africaines, épiceries ethniques, distributeurs spécialisés' },
   { region: 'Europe de l\'Ouest', flag: '🇫🇷🇧🇪', detail: 'Diaspora congolaise, épiceries africaines, circuits bio' },
   { region: 'Afrique de l\'Ouest', flag: '🌍', detail: 'Distributeurs CEDEAO, supermarchés régionaux' },
-  { region: 'Afrique centrale', flag: '🇨🇩🇨🇲', detail: 'RDC, Cameroun, Gabon — marchés voisins' },
+  { region: 'Afrique centrale', flag: '🇨🇩🇨🇲', detail: 'RDC, Cameroun, Gabon : marchés voisins' },
 ];
 
 const PARTNER_BENEFITS = [

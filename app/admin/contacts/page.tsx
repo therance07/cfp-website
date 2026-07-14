@@ -43,7 +43,7 @@ export default async function AdminContactsPage() {
                   <td className="px-4 py-3 whitespace-nowrap">
                     <a href={`mailto:${c.email}`} className="text-[var(--color-primary)] hover:underline">{c.email}</a>
                   </td>
-                  <td className="px-4 py-3 text-gray-600 max-w-[140px] truncate">{c.objet ?? '—'}</td>
+                  <td className="px-4 py-3 text-gray-600 max-w-[140px] truncate">{c.objet ?? '-'}</td>
                   <td className="px-4 py-3 text-gray-600 max-w-[200px]">
                     <p className="line-clamp-2 text-xs">{c.message}</p>
                   </td>

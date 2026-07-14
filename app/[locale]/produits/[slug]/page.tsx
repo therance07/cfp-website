@@ -26,7 +26,7 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<Met
   const product = getProductBySlug(slug);
   if (!product) return { title: 'Produit introuvable' };
   return {
-    title: `${product.nameFr} — Congo Food Process`,
+    title: product.nameFr,
     description: product.description,
   };
 }

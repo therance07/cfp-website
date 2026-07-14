@@ -14,7 +14,7 @@ const nunitoSans = Nunito_Sans({
 const barlowCondensed = Barlow_Condensed({ subsets: ['latin'], variable: '--font-barlow', weight: ['400','500','600','700'], display: 'swap' });
 
 export const metadata: Metadata = {
-  title: { default: 'Admin — Congo Food Process', template: '%s | CFP Admin' },
+  title: { default: 'Admin | Congo Food Process', template: '%s | CFP Admin' },
   robots: { index: false, follow: false },
 };
 

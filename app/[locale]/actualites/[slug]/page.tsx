@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale, slug } }: Props): Pro
   const article = getNewsBySlug(slug);
   if (!article) return { title: 'Article introuvable' };
   return {
-    title: `${locale === 'fr' ? article.title : article.titleEn} — CFP`,
+    title: locale === 'fr' ? article.title : article.titleEn,
     description: locale === 'fr' ? article.excerpt : article.excerptEn,
   };
 }

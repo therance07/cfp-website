@@ -121,7 +121,7 @@ export default async function AdminCommandesPage({
                         )}
                       </td>
                       <td className="px-4 py-3 font-semibold text-[var(--color-dark)] whitespace-nowrap">
-                        {c.montant_total != null ? formatPrice(c.montant_total) : '—'}
+                        {c.montant_total != null ? formatPrice(c.montant_total) : '-'}
                       </td>
                     </>
                   ) : (
@@ -137,7 +137,7 @@ export default async function AdminCommandesPage({
                           {c.pays}{c.quantite_estimee ? ` · ${c.quantite_estimee}` : ''}
                         </p>
                       </td>
-                      <td className="px-4 py-3 text-gray-400 whitespace-nowrap">—</td>
+                      <td className="px-4 py-3 text-gray-400 whitespace-nowrap">-</td>
                     </>
                   )}
 
