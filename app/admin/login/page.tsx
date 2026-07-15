@@ -104,7 +104,7 @@ export default function AdminLoginPage() {
               label="Email"
               type="email"
               required
-              placeholder="admin@congofoodprocess.cg"
+              placeholder="admin@congofoodprocess.com"
               leftAddon={<Mail size={16} color="currentColor" />}
               {...register('email')}
               error={errors.email?.message}

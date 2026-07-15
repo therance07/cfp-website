@@ -157,8 +157,8 @@ export default function DistributionPage({ params: { locale } }: { params: { loc
           </div>
           <div className="relative h-72 rounded-2xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
-              alt="Partenaires CFP"
+              src="/images/programme-partenaires.webp"
+              alt="Illustration du programme partenaires Congo Food Process"
               fill sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />

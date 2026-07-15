@@ -54,7 +54,7 @@ export async function generateMetadata({
       locale: locale === 'fr' ? 'fr_FR' : 'en_US',
       type: 'website',
     },
-    metadataBase: new URL('https://congofoodprocess.cg'),
+    metadataBase: new URL('https://congofoodprocess.com'),
   };
 }
 

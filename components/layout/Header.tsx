@@ -265,7 +265,7 @@ export default function Header() {
                 {t('cta')}
               </Button>
               <p className="text-center text-xs text-gray-400 mt-4">
-                +242 06 515 82 96 · contact@congofoodprocess.cg
+                +242 06 515 82 96 · contact@congofoodprocess.com
               </p>
             </div>
           </motion.div>

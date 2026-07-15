@@ -181,10 +181,9 @@ export default function AProposPage({ params: { locale: _locale } }: { params: {
             </ul>
           </div>
           <div className="relative h-72 rounded-2xl overflow-hidden">
-            {/* TODO: image Unsplash dupliquée (identique à la section Histoire plus haut) — remplacer par une photo dédiée */}
             <Image
-              src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1200&q=80"
-              alt="Atelier de production CFP"
+              src="/images/notre-usine.webp"
+              alt="Ligne de torréfaction et convoyeur à arachides, usine Congo Food Process"
               fill sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />

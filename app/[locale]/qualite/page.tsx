@@ -65,10 +65,9 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
             </p>
           </div>
           <div className="relative h-72 rounded-2xl overflow-hidden">
-            {/* TODO: image Unsplash dupliquée (identique au hero et à la section Laboratoire plus bas) — remplacer par une photo dédiée */}
             <Image
-              src="https://images.unsplash.com/photo-1581093806997-124204d9fa9d?w=1200&q=80"
-              alt="Laboratoire contrôle qualité"
+              src="/images/qualite-engagement.webp"
+              alt="Engagement qualité et conformité, Congo Food Process"
               fill sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
@@ -113,10 +112,9 @@ export default function QualitePage({ params: { locale: _locale } }: { params: {
       <SectionWrapper bg="dark" py="lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative h-72 rounded-2xl overflow-hidden order-2 lg:order-1">
-            {/* TODO: image Unsplash dupliquée (identique au hero et à la section Politique qualité plus haut) — remplacer par une photo dédiée */}
             <Image
-              src="https://images.unsplash.com/photo-1581093806997-124204d9fa9d?w=1200&q=80"
-              alt="Laboratoire CFP"
+              src="/images/controle-interne.webp"
+              alt="Arachides triées pour contrôle qualité interne"
               fill sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />

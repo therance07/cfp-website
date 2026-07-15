@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 const CONTACT_INFO = [
   { icon: MapPin, label: 'Adresse', value: 'N° 7 rue Lifou Mpila abattoir (zone SIASIC), Brazzaville, Congo', href: null },
   { icon: Phone,  label: 'Téléphone', value: '+242 06 515 82 96', href: 'tel:+242065158296' },
-  { icon: Mail,   label: 'Email', value: 'contact@congofoodprocess.cg', href: 'mailto:contact@congofoodprocess.cg' },
+  { icon: Mail,   label: 'Email', value: 'contact@congofoodprocess.com', href: 'mailto:contact@congofoodprocess.com' },
   { icon: Clock,  label: 'Horaires', value: 'Lun-Ven : 8h00 – 17h00', href: null },
 ];
 
